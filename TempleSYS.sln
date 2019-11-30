@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempleSYS", "TempleSYS\TempleSYS.csproj", "{B7FF6ACF-5313-4F59-A7EC-B96809F8AC79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempleSYS.DAL", "TempleSYS.DAL\TempleSYS.DAL.csproj", "{F78B4915-BDAF-4753-9D01-5DD10D7F59CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempleSYS.Model", "TempleSYS.Model\TempleSYS.Model.csproj", "{77482D79-02D4-4059-917E-0DF599C97C39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B7FF6ACF-5313-4F59-A7EC-B96809F8AC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7FF6ACF-5313-4F59-A7EC-B96809F8AC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7FF6ACF-5313-4F59-A7EC-B96809F8AC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78B4915-BDAF-4753-9D01-5DD10D7F59CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78B4915-BDAF-4753-9D01-5DD10D7F59CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78B4915-BDAF-4753-9D01-5DD10D7F59CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78B4915-BDAF-4753-9D01-5DD10D7F59CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77482D79-02D4-4059-917E-0DF599C97C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77482D79-02D4-4059-917E-0DF599C97C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77482D79-02D4-4059-917E-0DF599C97C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77482D79-02D4-4059-917E-0DF599C97C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
