@@ -107,6 +107,16 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TempleSYS.DAL\TempleSYS.DAL.csproj">
+      <Project>{f78b4915-bdaf-4753-9d01-5dd10d7f59cd}</Project>
+      <Name>TempleSYS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TempleSYS.Model\TempleSYS.Model.csproj">
+      <Project>{77482d79-02d4-4059-917e-0df599c97c39}</Project>
+      <Name>TempleSYS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

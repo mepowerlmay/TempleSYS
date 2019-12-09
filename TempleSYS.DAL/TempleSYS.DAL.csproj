@@ -35,6 +35,7 @@
       <HintPath>..\packages\Dapper.1.29\lib\net40\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,10 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TempleGodsDAL.cs" />
+    <Compile Include="TemplePeoBasicDAL.cs" />
+    <Compile Include="TempleUserDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TempleSYS.Model\TempleSYS.Model.csproj">
+      <Project>{77482d79-02d4-4059-917e-0df599c97c39}</Project>
+      <Name>TempleSYS.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

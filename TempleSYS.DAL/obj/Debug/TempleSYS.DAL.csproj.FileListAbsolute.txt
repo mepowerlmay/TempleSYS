@@ -1,0 +1,12 @@
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\TempleSYS.DAL.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\TempleSYS.DAL.pdb
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\Dapper.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\TempleSYS.Model.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\TempleSYS.Model.pdb
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\Dapper.pdb
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\bin\Debug\Dapper.xml
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\obj\Debug\TempleSYS.DAL.csprojAssemblyReference.cache
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\obj\Debug\TempleSYS.DAL.csproj.CoreCompileInputs.cache
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\obj\Debug\TempleSYS.DAL.csproj.CopyComplete
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\obj\Debug\TempleSYS.DAL.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS.DAL\obj\Debug\TempleSYS.DAL.pdb
