@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="panel panel-success">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel success</h3>
+    <h3 class="panel-title">宮內人員維護作業</h3>
   </div>
   <div class="panel-body">
     Panel content

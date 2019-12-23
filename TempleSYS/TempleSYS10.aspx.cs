@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TempleSYS.App_Code;
 
 namespace TempleSYS
 {
-    public partial class TempleSYS05 : BasePage
+    public partial class TempleSYS10 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -5,4 +5,13 @@
     點燈項目設定
 
 
+        <div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">點燈項目設定</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
 </asp:Content>

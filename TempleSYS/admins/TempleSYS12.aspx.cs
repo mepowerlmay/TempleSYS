@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using TempleSYS.App_Code;
 
-namespace TempleSYS
+namespace TempleSYS.admins
 {
-    public partial class TempleSYS05 : BasePage
+    public partial class TempleSYS12 : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

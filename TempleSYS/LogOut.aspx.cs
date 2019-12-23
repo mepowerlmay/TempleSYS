@@ -13,6 +13,15 @@ namespace TempleSYS
         protected void Page_Load(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
+            Session.Abandon();
+
+            // clear authentication cookie
+            HttpCookie cookie1 = new HttpCookie(FormsAuthentication.FormsCookieName, "");
+            cookie1.Expires = DateTime.Now.AddYears(-1);
+            Response.Cookies.Add(cookie1);
+
+
+            FormsAuthentication.RedirectToLoginPage();
         }
     }
 }

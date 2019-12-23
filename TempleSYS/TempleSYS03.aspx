@@ -5,7 +5,7 @@
 
     <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel warning</h3>
+    <h3 class="panel-title">友宮資料維護作業</h3>
   </div>
   <div class="panel-body">
     Panel content

@@ -10,6 +10,6 @@
 namespace TempleSYS {
     
     
-    public partial class TempleSYS06 {
+    public partial class TempleSYS08 {
     }
 }

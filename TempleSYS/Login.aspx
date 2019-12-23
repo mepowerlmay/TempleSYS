@@ -13,21 +13,22 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="panel panel-info">
                         <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <strong>彰化天后三聖宮</strong>
+                            <h3 class="panel-title ">
+                                <strong class="h2">彰化天后三聖宮 寺廟管理系統</strong>
                                 <br />
-                               登入
-                            </h3>
+                                登入
+                            </h3>   
                         </div>
                         <div class="panel-body">
                             <fieldset>
                                 <div class="form-group">
                                     <label>帳號:</label>
-                                    <asp:TextBox ID="txtAccount" runat="server" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="txtAccount" runat="server" CssClass="form-control" autocomplete="off"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
                                     <label>密碼:</label>
-                                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                                    <input type="password" style="display:none" />
+                                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"  autocomplete="off"></asp:TextBox>
                                 </div>
                                 <asp:Button ID="btnLogin" runat="server" Text="登入" CssClass=" btn btn-lg     btn-success " OnClick="btnLogin_Click" />
                             </fieldset>

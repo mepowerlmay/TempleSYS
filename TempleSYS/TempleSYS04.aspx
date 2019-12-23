@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel info</h3>
+    <h3 class="panel-title">神尊維護作業</h3>
   </div>
   <div class="panel-body">
     Panel content

@@ -13,3 +13,14 @@ D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Debug\TempleSYS.csproj.CoreCompileInputs
 D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Debug\TempleSYS.csproj.CopyComplete
 D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Debug\TempleSYS.dll
 D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Debug\TempleSYS.pdb
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\ICSharpCode.SharpZipLib.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\log4net.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\Newtonsoft.Json.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\Niunan.Utility.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\NPOI.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\NPOI.OOXML.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\NPOI.OpenXml4Net.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\NPOI.OpenXmlFormats.dll
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\log4net.xml
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\Niunan.Utility.pdb
+D:\mepowerlmay\TempleSYS2\TempleSYS\bin\Niunan.Utility.xml

@@ -7,9 +7,9 @@
 // </自動產生的>
 //------------------------------------------------------------------------------
 
-namespace TempleSYS {
+namespace TempleSYS.admins {
     
     
-    public partial class TempleSYS06 {
+    public partial class TempleSYS12 {
     }
 }

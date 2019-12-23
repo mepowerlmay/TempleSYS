@@ -39,7 +39,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Niunan.Utility">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\Niunan.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -58,6 +83,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admins\TempleSYS12.aspx" />
+    <Content Include="admins\TempleSYS13.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -97,11 +124,27 @@
     <Content Include="TempleSYS05.aspx" />
     <Content Include="TempleSYS06.aspx" />
     <Content Include="TempleSYS07.aspx" />
-    <Content Include="TempleSYS08.aspx" />
-    <Content Include="TempleSYS09.aspx" />
+    <Content Include="admins\TempleSYS08.aspx" />
+    <Content Include="admins\TempleSYS09.aspx" />
+    <Content Include="TempleSYS10.aspx" />
+    <Content Include="TempleSYS11.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admins\TempleSYS12.aspx.cs">
+      <DependentUpon>TempleSYS12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admins\TempleSYS12.aspx.designer.cs">
+      <DependentUpon>TempleSYS12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admins\TempleSYS13.aspx.cs">
+      <DependentUpon>TempleSYS13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admins\TempleSYS13.aspx.designer.cs">
+      <DependentUpon>TempleSYS13.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -183,19 +226,33 @@
     <Compile Include="TempleSYS07.aspx.designer.cs">
       <DependentUpon>TempleSYS07.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS08.aspx.cs">
+    <Compile Include="admins\TempleSYS08.aspx.cs">
       <DependentUpon>TempleSYS08.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS08.aspx.designer.cs">
+    <Compile Include="admins\TempleSYS08.aspx.designer.cs">
       <DependentUpon>TempleSYS08.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS09.aspx.cs">
+    <Compile Include="admins\TempleSYS09.aspx.cs">
       <DependentUpon>TempleSYS09.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS09.aspx.designer.cs">
+    <Compile Include="admins\TempleSYS09.aspx.designer.cs">
       <DependentUpon>TempleSYS09.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TempleSYS10.aspx.cs">
+      <DependentUpon>TempleSYS10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TempleSYS10.aspx.designer.cs">
+      <DependentUpon>TempleSYS10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TempleSYS11.aspx.cs">
+      <DependentUpon>TempleSYS11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TempleSYS11.aspx.designer.cs">
+      <DependentUpon>TempleSYS11.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
