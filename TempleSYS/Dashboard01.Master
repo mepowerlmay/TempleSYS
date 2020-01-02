@@ -13,25 +13,16 @@
 
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-
-
-    
+    </asp:ContentPlaceHolder>    
       
     <link href=" <%= ResolveUrl("~/Content/bootstrap.min.css") %>" rel="stylesheet" />
-    <script src="<%= ResolveUrl("~/Scripts/jquery-1.9.1.min.js") %>"></script>
-    <script src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
-    <script>
-        $(document).ready(function () {
-                    var url = window.location;
-                    $('.navbar .nav').find('.active').removeClass('active');
-                    $('.navbar .nav li a').each(function () {
-                        if (this.href == url) {
-                            $(this).parent().addClass('active');
-                        }
-                    });
-                });
-    </script>
+   
+
+    <style>
+
+
+
+    </style>
 </head>
 <body>
 
@@ -107,7 +98,19 @@
 
     </div>
 
-
+     <script src="<%= ResolveUrl("~/Scripts/jquery-1.9.1.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
+    <script>
+        $(document).ready(function () {
+                    var url = window.location;
+                    $('.navbar .nav').find('.active').removeClass('active');
+                    $('.navbar .nav li a').each(function () {
+                        if (this.href == url) {
+                            $(this).parent().addClass('active');
+                        }
+                    });
+                });
+    </script>
 
 
 </body>

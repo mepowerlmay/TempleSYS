@@ -21,7 +21,9 @@ namespace TempleSYS
             Response.Cookies.Add(cookie1);
 
 
-            FormsAuthentication.RedirectToLoginPage();
+            //   FormsAuthentication.RedirectToLoginPage();
+
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

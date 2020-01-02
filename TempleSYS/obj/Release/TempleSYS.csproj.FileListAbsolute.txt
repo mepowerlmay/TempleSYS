@@ -1,0 +1,2 @@
+D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Release\TempleSYS.csprojAssemblyReference.cache
+D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Release\TempleSYS.csproj.CoreCompileInputs.cache
