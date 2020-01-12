@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Alonso.Utility;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Niunan.Utility;
+
 using TempleSYS.DAL;
 using TempleSYS.Model;
 
@@ -55,7 +56,8 @@ namespace TempleSYS
                 return;
             }
             TempleUserDAL dal = new TempleUserDAL();
-            string Account = txtAccount.Text.Trim();
+            TempleUser m = null;
+          string Account = txtAccount.Text.Trim();
             string Password = txtPassword.Text.Trim();
 
             //產生一個Cookie
@@ -75,6 +77,15 @@ namespace TempleSYS
                 txtAccount.Focus();
                 return;
             }
+            m = dal.GetModelByCond(cond);
+            
+            if (m.IsDelete  == 1)
+            {
+                Tool.Alert("帳號已停用!!!!", this);
+                txtAccount.Focus();
+                return;
+            }
+
 
             cond = $" UPPER(Account)='{Account.ToUpper()}' and Password ='{Password}'";
 

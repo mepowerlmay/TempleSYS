@@ -39,7 +39,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Alonso.Utility">
+    <Reference Include="Alonso.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Alonso.Utility\Alonso.Utility\bin\Debug\Alonso.Utility.dll</HintPath>
     </Reference>
     <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
@@ -55,9 +56,6 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Niunan.Utility">
-      <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\Niunan.Utility.dll</HintPath>
     </Reference>
     <Reference Include="NPOI">
       <HintPath>..\..\niunan-niunan_utility-master\Niunan.Utility\bin\Debug\NPOI.dll</HintPath>
@@ -123,17 +121,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TempleSYS01.aspx" />
-    <Content Include="TempleSYS02.aspx" />
-    <Content Include="TempleSYS03.aspx" />
-    <Content Include="TempleSYS04.aspx" />
-    <Content Include="TempleSYS05.aspx" />
-    <Content Include="TempleSYS06.aspx" />
-    <Content Include="TempleSYS07.aspx" />
+    <Content Include="Scripts\jquery.popup.js" />
+    <Content Include="Menus\TempleSYS01.aspx" />
+    <Content Include="Menus\TempleSYS02.aspx" />
+    <Content Include="Menus\TempleSYS03.aspx" />
+    <Content Include="Menus\TempleSYS04.aspx" />
+    <Content Include="Menus\TempleSYS05.aspx" />
+    <Content Include="Menus\TempleSYS06.aspx" />
+    <Content Include="Menus\TempleSYS07.aspx" />
     <Content Include="admins\TempleSYS08.aspx" />
     <Content Include="admins\TempleSYS09.aspx" />
-    <Content Include="TempleSYS10.aspx" />
-    <Content Include="TempleSYS11.aspx" />
+    <Content Include="Menus\TempleSYS10.aspx" />
+    <Content Include="Menus\TempleSYS11.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -183,53 +182,53 @@
       <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TempleSYS01.aspx.cs">
+    <Compile Include="Menus\TempleSYS01.aspx.cs">
       <DependentUpon>TempleSYS01.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS01.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS01.aspx.designer.cs">
       <DependentUpon>TempleSYS01.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS02.aspx.cs">
+    <Compile Include="Menus\TempleSYS02.aspx.cs">
       <DependentUpon>TempleSYS02.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS02.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS02.aspx.designer.cs">
       <DependentUpon>TempleSYS02.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS03.aspx.cs">
+    <Compile Include="Menus\TempleSYS03.aspx.cs">
       <DependentUpon>TempleSYS03.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS03.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS03.aspx.designer.cs">
       <DependentUpon>TempleSYS03.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS04.aspx.cs">
+    <Compile Include="Menus\TempleSYS04.aspx.cs">
       <DependentUpon>TempleSYS04.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS04.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS04.aspx.designer.cs">
       <DependentUpon>TempleSYS04.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS05.aspx.cs">
+    <Compile Include="Menus\TempleSYS05.aspx.cs">
       <DependentUpon>TempleSYS05.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS05.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS05.aspx.designer.cs">
       <DependentUpon>TempleSYS05.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS06.aspx.cs">
+    <Compile Include="Menus\TempleSYS06.aspx.cs">
       <DependentUpon>TempleSYS06.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS06.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS06.aspx.designer.cs">
       <DependentUpon>TempleSYS06.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS07.aspx.cs">
+    <Compile Include="Menus\TempleSYS07.aspx.cs">
       <DependentUpon>TempleSYS07.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS07.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS07.aspx.designer.cs">
       <DependentUpon>TempleSYS07.aspx</DependentUpon>
     </Compile>
     <Compile Include="admins\TempleSYS08.aspx.cs">
@@ -246,18 +245,18 @@
     <Compile Include="admins\TempleSYS09.aspx.designer.cs">
       <DependentUpon>TempleSYS09.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS10.aspx.cs">
+    <Compile Include="Menus\TempleSYS10.aspx.cs">
       <DependentUpon>TempleSYS10.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS10.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS10.aspx.designer.cs">
       <DependentUpon>TempleSYS10.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TempleSYS11.aspx.cs">
+    <Compile Include="Menus\TempleSYS11.aspx.cs">
       <DependentUpon>TempleSYS11.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TempleSYS11.aspx.designer.cs">
+    <Compile Include="Menus\TempleSYS11.aspx.designer.cs">
       <DependentUpon>TempleSYS11.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

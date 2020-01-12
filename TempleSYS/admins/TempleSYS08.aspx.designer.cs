@@ -13,6 +13,24 @@ namespace TempleSYS {
     public partial class TempleSYS08 {
         
         /// <summary>
+        /// hfId 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfId;
+        
+        /// <summary>
+        /// PanelQ 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelQ;
+        
+        /// <summary>
         /// qtxtAccount 控制項。
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace TempleSYS {
         protected global::Wuqi.Webdiyer.AspNetPager anp;
         
         /// <summary>
+        /// PanelCRUD 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelCRUD;
+        
+        /// <summary>
         /// txtAccount 控制項。
         /// </summary>
         /// <remarks>
@@ -94,13 +121,13 @@ namespace TempleSYS {
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
         
         /// <summary>
-        /// txtURole 控制項。
+        /// ddlRole 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtURole;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRole;
         
         /// <summary>
         /// txtURoleName 控制項。

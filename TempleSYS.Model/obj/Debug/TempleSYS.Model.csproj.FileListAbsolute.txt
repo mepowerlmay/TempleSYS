@@ -3,3 +3,9 @@ D:\mepowerlmay\TempleSYS2\TempleSYS.Model\bin\Debug\TempleSYS.Model.pdb
 D:\mepowerlmay\TempleSYS2\TempleSYS.Model\obj\Debug\TempleSYS.Model.csproj.CoreCompileInputs.cache
 D:\mepowerlmay\TempleSYS2\TempleSYS.Model\obj\Debug\TempleSYS.Model.dll
 D:\mepowerlmay\TempleSYS2\TempleSYS.Model\obj\Debug\TempleSYS.Model.pdb
+D:\mepowerlmay\TempleSYS\TempleSYS.Model\bin\Debug\TempleSYS.Model.dll
+D:\mepowerlmay\TempleSYS\TempleSYS.Model\bin\Debug\TempleSYS.Model.pdb
+D:\mepowerlmay\TempleSYS\TempleSYS.Model\obj\Debug\TempleSYS.Model.csprojAssemblyReference.cache
+D:\mepowerlmay\TempleSYS\TempleSYS.Model\obj\Debug\TempleSYS.Model.csproj.CoreCompileInputs.cache
+D:\mepowerlmay\TempleSYS\TempleSYS.Model\obj\Debug\TempleSYS.Model.dll
+D:\mepowerlmay\TempleSYS\TempleSYS.Model\obj\Debug\TempleSYS.Model.pdb

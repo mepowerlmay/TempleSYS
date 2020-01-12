@@ -219,7 +219,7 @@ namespace TempleSYS.DAL
         public int CalcCount(string cond)
         {
             string sql = "select count(1) from [TempleUser]";
-            if (!string.IsNullOrEmpty(cond))
+            if (!string.IsNullOrEmpty(cond.Trim()))
             {
                 sql += " where " + cond;
             }

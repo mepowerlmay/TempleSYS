@@ -1,33 +1,35 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard01.master.cs" Inherits="TempleSYS.Dashboard01" %>
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
     <meta http-equiv="cache-control" content="no-cache" />
-
     <meta http-equiv="pragma" content="no-cache" />
       <meta http-equiv="expires" content="0" />
-
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>    
       
+      <script src="<%= ResolveUrl("~/Scripts/jquery-1.9.1.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/jquery.popup.js") %>"></script>
+    <script>
+        $(document).ready(function () {
+                    var url = window.location;
+                    $('.navbar .nav').find('.active').removeClass('active');
+                    $('.navbar .nav li a').each(function () {
+                        if (this.href == url) {
+                            $(this).parent().addClass('active');
+                        }
+                    });
+                });
+    </script>
     <link href=" <%= ResolveUrl("~/Content/bootstrap.min.css") %>" rel="stylesheet" />
    
-
     <style>
-
-
-
     </style>
 </head>
 <body>
-
-
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -39,7 +41,6 @@
                 </button>
                 <a class="navbar-brand" href="#">彰化天后三聖宮</a>
             </div>
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                                 <li class="dropdown">
@@ -47,25 +48,19 @@
                             宮內資料維護 <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li ><a href="<%= ResolveUrl("~/TempleSYS01.aspx") %>">信徒資料維護作業</a></li>
-                    <li><a href="<%= ResolveUrl("~/TempleSYS02.aspx") %>">宮內人員維護作業</a></li>
-                    <li><a href="<%= ResolveUrl("~/TempleSYS03.aspx") %>">友宮資料維護作業</a></li>
-                    <li><a href="<%= ResolveUrl("~/TempleSYS04.aspx") %>">神尊維護作業    </a></li>
-                                  <li><a href="<%= ResolveUrl("~/TempleSYS06.aspx") %>">義子女資料作業  </a></li>
+                            <li ><a href="<%= ResolveUrl("~/Menus/TempleSYS01.aspx") %>">信徒資料維護作業</a></li>
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS02.aspx") %>">宮內人員維護作業</a></li>
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS03.aspx") %>">友宮資料維護作業</a></li>
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS04.aspx") %>">神尊維護作業    </a></li>
+                                  <li><a href="<%= ResolveUrl("~/Menus/TempleSYS06.aspx") %>">義子女資料作業  </a></li>
                         </ul>
                     </li>
-
-
-
                 
-
-
-                    <li><a href="<%= ResolveUrl("~/TempleSYS05.aspx") %>">廠商資料作業    </a></li>
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS05.aspx") %>">廠商資料作業    </a></li>
       
-                    <li><a href="<%= ResolveUrl("~/TempleSYS07.aspx") %>">點燈項目設定    </a></li>
-                    <li><a href="<%= ResolveUrl("~/TempleSYS10.aspx") %>">活動報名    </a></li>
-                    <li><a href="<%= ResolveUrl("~/TempleSYS11.aspx") %>">公佈欄    </a></li>
-
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS07.aspx") %>">點燈項目設定    </a></li>
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS10.aspx") %>">活動報名    </a></li>
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS11.aspx") %>">公佈欄    </a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
                             系統設定 <span class="caret"></span>
@@ -77,11 +72,7 @@
                             <li><a href="<%= ResolveUrl("~/admins/TempleSYS13.aspx") %>">公佈欄維護作業     </a></li>
                         </ul>
                     </li>
-
-
-
                 </ul>
-
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<%= ResolveUrl("~/LogOut.aspx") %>">登出    </a></li>
                 </ul>
@@ -95,23 +86,7 @@
                 </asp:ContentPlaceHolder>
             </div>
         </form>
-
     </div>
-
-     <script src="<%= ResolveUrl("~/Scripts/jquery-1.9.1.min.js") %>"></script>
-    <script src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
-    <script>
-        $(document).ready(function () {
-                    var url = window.location;
-                    $('.navbar .nav').find('.active').removeClass('active');
-                    $('.navbar .nav li a').each(function () {
-                        if (this.href == url) {
-                            $(this).parent().addClass('active');
-                        }
-                    });
-                });
-    </script>
-
-
+   
 </body>
 </html>

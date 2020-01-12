@@ -49,6 +49,9 @@
     <Compile Include="TempleGodsDAL.cs" />
     <Compile Include="TemplePeoBasicDAL.cs" />
     <Compile Include="TempleUserDAL.cs" />
+    <Compile Include="Temple_t_qxDAL.cs" />
+    <Compile Include="Temple_t_roleDAL.cs" />
+    <Compile Include="Temple_t_role_qxDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

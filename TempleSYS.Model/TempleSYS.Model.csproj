@@ -44,6 +44,9 @@
     <Compile Include="TempleGods.cs" />
     <Compile Include="TemplePeoBasic.cs" />
     <Compile Include="TempleUser.cs" />
+    <Compile Include="Temple_t_qx.cs" />
+    <Compile Include="Temple_t_role.cs" />
+    <Compile Include="Temple_t_role_qx.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
