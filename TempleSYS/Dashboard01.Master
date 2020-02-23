@@ -13,6 +13,9 @@
       <script src="<%= ResolveUrl("~/Scripts/jquery-1.9.1.min.js") %>"></script>
     <script src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
     <script src="<%= ResolveUrl("~/Scripts/jquery.popup.js") %>"></script>
+        <script src="<%= ResolveUrl("~/Scripts/My97DatePicker/WdatePicker.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/My97DatePicker/lang/.zh-twjs") %>"></script>
+    
     <script>
         $(document).ready(function () {
                     var url = window.location;
@@ -22,10 +25,17 @@
                             $(this).parent().addClass('active');
                         }
                     });
-                });
+        });
+
+        function GetDate() {
+            WdatePicker({ lang: 'zh-tw' ,dateFmt:'yyyy/MM/dd'  });
+        }
     </script>
     <link href=" <%= ResolveUrl("~/Content/bootstrap.min.css") %>" rel="stylesheet" />
-   
+    <link href=" <%= ResolveUrl("~/Content/rtable.css") %>" rel="stylesheet" />
+    <link href=" <%= ResolveUrl("~/Scripts/My97DatePicker/skin/WdatePicker.css") %>" rel="stylesheet" />
+
+    
     <style>
     </style>
 </head>
@@ -43,10 +53,12 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS11.aspx") %>">公佈欄    </a></li>
                                 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
                             宮內資料維護 <span class="caret"></span>
                         </a>
+
                         <ul class="dropdown-menu" role="menu">
                             <li ><a href="<%= ResolveUrl("~/Menus/TempleSYS01.aspx") %>">信徒資料維護作業</a></li>
                     <li><a href="<%= ResolveUrl("~/Menus/TempleSYS02.aspx") %>">宮內人員維護作業</a></li>
@@ -60,7 +72,7 @@
       
                     <li><a href="<%= ResolveUrl("~/Menus/TempleSYS07.aspx") %>">點燈項目設定    </a></li>
                     <li><a href="<%= ResolveUrl("~/Menus/TempleSYS10.aspx") %>">活動報名    </a></li>
-                    <li><a href="<%= ResolveUrl("~/Menus/TempleSYS11.aspx") %>">公佈欄    </a></li>
+                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
                             系統設定 <span class="caret"></span>

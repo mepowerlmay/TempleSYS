@@ -51,7 +51,7 @@ namespace TempleSYS
         {
             LinkButton lb = (LinkButton)sender;
             int Id = TypeChange.StringToInt(lb.CommandArgument);
-
+            hfId.Value = Id.ToString();
             TempleUser m = templeUserDAL.GetModel(Id);
             ShowCRUD(emCRUD.Edit);
             EnableCo(emCRUD.Edit);
@@ -81,18 +81,17 @@ namespace TempleSYS
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
-        {
-
-            
-
-            
+        {   
             string stxtAccount = txtAccount.Text;//帳號
             string stxtPassword = txtPassword.Text; //密碼
             string stxtUserName = txtUserName.Text ; //姓名
             string sRole = ddlRole.SelectedValue;//腳色
             string stxtURoleName = txtURoleName.Text; //職稱
             int sIsDelete = chkIsDelete.Checked ? 1 : 0; //是否停用
-                
+
+            WhereClausesBuilder WhereClausesBuilder = new WhereClausesBuilder();
+            string cond = " 1=1 ";
+
             if (string.IsNullOrEmpty(stxtAccount))
             {
                 Tool.Alert("請輸入帳號!!", this);
@@ -131,6 +130,16 @@ namespace TempleSYS
             {
                 //新增
                 //1.檢查帳號有無重複...
+
+                cond = " 1 =1 ";
+                     
+                WhereClausesBuilder.appendCriteriaText(txtAccount.Text.Trim().ToUpper(), " upper(Account)  = '{0}' ",ref cond);
+                if (templeUserDAL.CalcCount(cond) > 0) {
+                    Tool.Alert("帳號重複!!請輸入其他帳號", this);
+                    ShowCRUD(emCRUD.Edit);
+                    return;
+                }
+
                 m.Account = txtAccount.Text;
                 m.Password = txtPassword.Text;
                 m.UserName = txtUserName.Text;
@@ -213,8 +222,8 @@ namespace TempleSYS
         {
             string cond = "1=1";
             var whereClausesBuilder = new WhereClausesBuilder();
-            whereClausesBuilder.appendCriteriaText(qtxtAccount.Text, " like '%{0}%' ", ref cond);
-            whereClausesBuilder.appendCriteriaText(qtxtUserName.Text, " like '%{0}%' ", ref cond);
+            whereClausesBuilder.appendCriteriaText(qtxtAccount.Text, " Account like '%{0}%' ", ref cond);
+            whereClausesBuilder.appendCriteriaText(qtxtUserName.Text, " UserName like '%{0}%' ", ref cond);
 
 
             return cond;
@@ -227,7 +236,7 @@ namespace TempleSYS
             txtUserName.Text = m.UserName; //姓名
             txtURoleName.Text = m.URoleName; //職稱
                                              //txtPassword.Text = "; 
-chkIsDelete .Checked = m.IsDelete  ==
+//chkIsDelete .Checked = m.IsDelete  =
             txtPassword.Attributes.Add("value", m.Password);  //密碼
 
             //txtURole.Text = ""; //腳色ID
@@ -264,10 +273,8 @@ chkIsDelete .Checked = m.IsDelete  ==
             txtAccount.Text = ""; //帳號
             txtUserName.Text = ""; //姓名
             txtURoleName.Text = ""; //職稱
-            //txtPassword.Text = ""; //密碼
-
+            txtPassword.Text = ""; //密碼
             txtPassword.Attributes.Remove("value");
-
 
             //txtURole.Text = ""; //腳色ID
 

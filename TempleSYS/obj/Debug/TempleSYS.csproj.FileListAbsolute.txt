@@ -31,6 +31,7 @@ D:\mepowerlmay\TempleSYS2\TempleSYS\obj\Debug\TempleSYS.pdb
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.dll.config
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.pdb
+D:\mepowerlmay\TempleSYS\TempleSYS\bin\Alonso.Utility.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\AspNetPager.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\Newtonsoft.Json.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.DAL.dll
@@ -38,8 +39,8 @@ D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.Model.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\Dapper.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.DAL.pdb
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\TempleSYS.Model.pdb
+D:\mepowerlmay\TempleSYS\TempleSYS\bin\Alonso.Utility.pdb
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\AspNetPager.xml
-D:\mepowerlmay\TempleSYS\TempleSYS\bin\log4net.xml
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\Dapper.pdb
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\Dapper.xml
 D:\mepowerlmay\TempleSYS\TempleSYS\bin\zh-CHS\AspNetPager.resources.dll
@@ -49,5 +50,3 @@ D:\mepowerlmay\TempleSYS\TempleSYS\obj\Debug\TempleSYS.csproj.CoreCompileInputs.
 D:\mepowerlmay\TempleSYS\TempleSYS\obj\Debug\TempleSYS.csproj.CopyComplete
 D:\mepowerlmay\TempleSYS\TempleSYS\obj\Debug\TempleSYS.dll
 D:\mepowerlmay\TempleSYS\TempleSYS\obj\Debug\TempleSYS.pdb
-D:\mepowerlmay\TempleSYS\TempleSYS\bin\Alonso.Utility.dll
-D:\mepowerlmay\TempleSYS\TempleSYS\bin\Alonso.Utility.pdb

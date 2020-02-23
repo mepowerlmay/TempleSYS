@@ -57,7 +57,7 @@ namespace TempleSYS
             }
             TempleUserDAL dal = new TempleUserDAL();
             TempleUser m = null;
-          string Account = txtAccount.Text.Trim();
+            string Account = txtAccount.Text.Trim();
             string Password = txtPassword.Text.Trim();
 
             //產生一個Cookie
@@ -86,10 +86,9 @@ namespace TempleSYS
                 return;
             }
 
-
+            //帳號密碼核對
             cond = $" UPPER(Account)='{Account.ToUpper()}' and Password ='{Password}'";
-
-            TempleUser m = dal.GetModelByCond(cond);
+             m = dal.GetModelByCond(cond);
 
             if (m == null)
             {
@@ -111,7 +110,7 @@ namespace TempleSYS
 
             Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encTicket));
 
-            Response.Redirect("~/TempleSYS01.aspx");
+            Response.Redirect("~/Menus/TempleSYS11.aspx");
         }
     }
 }
