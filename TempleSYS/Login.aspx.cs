@@ -102,7 +102,7 @@ namespace TempleSYS
               DateTime.Now,
               DateTime.Now.AddMinutes(120),
              false,
-              m.URole ,
+              m.RoleId.ToString() ,             
               FormsAuthentication.FormsCookiePath);
 
             // Encrypt the ticket.

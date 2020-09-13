@@ -8,7 +8,7 @@ namespace TempleSYS.DAL
 {
     /// <summary>[TempleUser]表数据访问类
     /// 作者:alonso(line id: menshin7)
-    /// 创建时间:2019-12-09 23:21:47
+    /// 创建时间:2020-09-13 14:23:36
     /// </summary>
     public partial class TempleUserDAL
     {
@@ -21,9 +21,9 @@ namespace TempleSYS.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into [TempleUser](");
-            strSql.Append("[Account], [Password], [UserName], [URole], [URoleName], [IsDelete], [CreateDate], [CreateName], [UpdateDate], [UpdateName]  )");
+            strSql.Append("[Account], [Password], [UserName], [RoleId], [URole], [RoleNameId], [URoleName], [IsDelete], [CreateDate], [CreateName], [UpdateDate], [UpdateName]  )");
             strSql.Append(" values (");
-            strSql.Append("@Account, @Password, @UserName, @URole, @URoleName, @IsDelete, @CreateDate, @CreateName, @UpdateDate, @UpdateName  );select @@identity;");
+            strSql.Append("@Account, @Password, @UserName, @RoleId, @URole, @RoleNameId, @URoleName, @IsDelete, @CreateDate, @CreateName, @UpdateDate, @UpdateName  );select @@identity;");
 
             using (var connection = ConnectionFactory.GetOpenConnection())
             {
@@ -39,7 +39,7 @@ namespace TempleSYS.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("update [TempleUser] set ");
-            strSql.Append("[Account]=@Account, [Password]=@Password, [UserName]=@UserName, [URole]=@URole, [URoleName]=@URoleName, [IsDelete]=@IsDelete, [CreateDate]=@CreateDate, [CreateName]=@CreateName, [UpdateDate]=@UpdateDate, [UpdateName]=@UpdateName  ");
+            strSql.Append("[Account]=@Account, [Password]=@Password, [UserName]=@UserName, [RoleId]=@RoleId, [URole]=@URole, [RoleNameId]=@RoleNameId, [URoleName]=@URoleName, [IsDelete]=@IsDelete, [CreateDate]=@CreateDate, [CreateName]=@CreateName, [UpdateDate]=@UpdateDate, [UpdateName]=@UpdateName  ");
             strSql.Append(" where Id=@Id ");
             using (var connection = ConnectionFactory.GetOpenConnection())
             {
@@ -193,8 +193,8 @@ namespace TempleSYS.DAL
             return list;
         }
 
-        /// <summary>
-        /// 分页获取数据列表
+        /// <summary>分页获取数据列表
+        /// 
         /// </summary>
         public List<TempleSYS.Model.TempleUser> GetListArray(string fileds, string orderstr, int PageSize, int PageIndex, string strWhere)
         {
@@ -203,13 +203,19 @@ namespace TempleSYS.DAL
             string cond = string.IsNullOrEmpty(strWhere) ? "" : string.Format(" where {0}", strWhere);
             string sql = string.Format("SELECT * FROM ( SELECT ROW_NUMBER() OVER (ORDER BY {0} {1}) AS pos, {2} FROM  [TempleUser] {3}  ) AS sp WHERE pos BETWEEN {4} AND {5}", order, ordertype, fileds, cond, (((PageIndex - 1) * PageSize) + 1), PageSize * PageIndex);
 
+            // 	    string sql = string.Format("select {0} from [TempleUser] {1} order by {2} offset {3} rows fetch next {4} rows only", fileds, cond, orderstr, (PageIndex - 1) * PageSize, PageSize);
+
+
             List<TempleSYS.Model.TempleUser> list = new List<TempleSYS.Model.TempleUser>();
             using (var connection = ConnectionFactory.GetOpenConnection())
             {
                 list = connection.Query<TempleSYS.Model.TempleUser>(sql).ToList();
+
             }
             return list;
         }
+
+
 
         /// <summary>计算记录数
         /// 
@@ -219,7 +225,7 @@ namespace TempleSYS.DAL
         public int CalcCount(string cond)
         {
             string sql = "select count(1) from [TempleUser]";
-            if (!string.IsNullOrEmpty(cond.Trim()))
+            if (!string.IsNullOrEmpty(cond))
             {
                 sql += " where " + cond;
             }
@@ -233,3 +239,4 @@ namespace TempleSYS.DAL
 
     }
 }
+
