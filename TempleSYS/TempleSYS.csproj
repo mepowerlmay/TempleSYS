@@ -87,6 +87,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="20210125.sql" />
     <Content Include="admins\TempleSYS12.aspx" />
     <Content Include="admins\TempleSYS13.aspx" />
     <Content Include="Content\bootstrap-theme.css" />

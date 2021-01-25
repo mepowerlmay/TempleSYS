@@ -16,7 +16,7 @@ namespace TempleSYS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.Title = "彰化天后三聖宮 寺廟管理系統";
+            this.Title = "彰化天后三聖宮-寺廟管理系統";
 
             if (!IsPostBack)
             {

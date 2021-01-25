@@ -4,17 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <style type="text/css">
-        .style1
-        {
-            width: 100%;
-        }
-        .style2
-        {
-            width: 130px;
-        }
-    </style>
-
+    
 
     <asp:HiddenField ID="hfoperate" runat="server" />
     <asp:HiddenField ID="hfroleid" runat="server" />
@@ -25,9 +15,9 @@
         </div>
         <div class="panel-body">
                 
-              <table class="style1">
+           <table>
         <tr>
-            <td class="style2" rowspan="2">
+            <td class="" rowspan="2">
                 <asp:ListBox ID="lsbrole" DataTextField="rolename" DataValueField="id" runat="server"
                     AutoPostBack="True" Width="76px" OnSelectedIndexChanged="lsbrole_SelectedIndexChanged">
                 </asp:ListBox>

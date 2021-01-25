@@ -41,9 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TempleBoard.cs" />
-    <Compile Include="TempleGods.cs" />
-    <Compile Include="TemplePeoBasic.cs" />
     <Compile Include="TempleUser.cs" />
     <Compile Include="Temple_t_qx.cs" />
     <Compile Include="Temple_t_role.cs" />
