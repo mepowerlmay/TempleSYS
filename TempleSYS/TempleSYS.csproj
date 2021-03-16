@@ -87,7 +87,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="20210125.sql" />
     <Content Include="admins\TempleSYS12.aspx" />
     <Content Include="admins\TempleSYS13.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -106,6 +105,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Dashboard01.Master" />
+    <Content Include="系統文件\20210316.sql" />
     <None Include="packages.config" />
     <Content Include="Scripts\ckeditor\adapters\jquery.js" />
     <Content Include="Scripts\ckeditor\ckeditor.js" />
@@ -476,6 +476,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="系統文件\tablelayout_彰化天后三聖宮.xlsx" />
+    <Content Include="系統文件\開表格快速SQL.xlsx" />
+    <Content Include="系統文件\彰化天后三聖宮.docx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery.popup.js" />
